@@ -1,11 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+
+import { Header } from './components/header';
 
 function App() {
 
   return (
-    <div>Hello World</div>
+    <div>
+    <Header/>
+    <div>
+      <input type="text" placeholder='Adicione uma nova tarefa' />
+      <button>Criar</button>
+    </div>
+    </div>
   )
 }
 
