@@ -1,7 +1,9 @@
-.wrapper {
+import styled from 'styled-components';
+
+export const Container = styled.div`
   width: 100%;
   padding: 0;
-}
+  
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;
@@ -69,3 +71,4 @@
   border-radius: 8px;
   
 }
+`;

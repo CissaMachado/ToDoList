@@ -1,7 +1,8 @@
-import styles from "./App.module.css";
+import { Container } from './styles'
 import { Header } from "./components/header";
 import { PlusCircle } from "phosphor-react";
 import { FormEvent, useState } from "react";
+
 
 function App() {
   const [task, setTask] = useState("");
@@ -15,8 +16,9 @@ function App() {
   return (
     <>
       <Header />
-      <form className={styles["form-task"]} onSubmit={handleCreateNewTask}>
-        <div className={styles["create-new-task"]}>
+      <Container>
+      <form className= "form-task" onSubmit={handleCreateNewTask}>
+        <div className="create-new-task">
           <input
             type="text"
             placeholder="Adicione uma nova tarefa"
@@ -28,6 +30,7 @@ function App() {
           </button>
         </div>
       </form>
+      </Container>
     </>
   );
 }
