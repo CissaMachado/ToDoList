@@ -107,6 +107,8 @@ html,
     line-height: 1;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    background-color: #200945;
+    color: #c4c4c4cc;
   }
   ol,
   ul {
@@ -128,13 +130,14 @@ html,
     border-spacing: 0;
   }
   * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 
   button {
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #e1e1e6;
   }
 
   input, select, textarea {
